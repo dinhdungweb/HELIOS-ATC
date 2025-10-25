@@ -84,9 +84,9 @@
       "type": "background-video-responsive",
       "name": "Video responsive",
       "settings": {
-        "video_shopify_desktop": "shopify://files/videos/calypsorotates(1).mp4",
+        "video_shopify_desktop": "shopify://files/videos/calypso rotates (1).mp4",
         "video_external_desktop": "",
-        "video_shopify_mobile": "shopify://files/videos/mobile (2).mov",
+        "video_shopify_mobile": "shopify://files/videos/Calypso Edit màu 9x16sn (1).mp4",
         "video_external_mobile": "",
         "video_full_width": false,
         "video_original_size": false,
