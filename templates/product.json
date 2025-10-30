@@ -108,7 +108,7 @@
         "richtext_3YiAcR": {
           "type": "richtext",
           "settings": {
-            "text": "<p>{{ product.metafields.custom.short_descriptions | metafield_tag }}</p>"
+            "text": "{{ product.metafields.custom.short_description | metafield_tag }}"
           }
         },
         "custom_liquid_FW6ge8": {
