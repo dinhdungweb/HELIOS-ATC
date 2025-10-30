@@ -131,7 +131,7 @@
           "settings": {
             "icon": "none",
             "title": "Đăng ký tư vấn 1:1",
-            "content": "<p> ĐĂNG KÝ TƯ VẤN 1:1 ĐỂ TRẢI NGHIỆM TRỰC TIẾP SẢN PHẨM</p>",
+            "content": "<p><a href=\"/pages/helios-private-call\" title=\"Helios Private Call\"> ĐĂNG KÝ TƯ VẤN 1:1 ĐỂ TRẢI NGHIỆM TRỰC TIẾP SẢN PHẨM</a></p>",
             "page": "",
             "open": false
           }
