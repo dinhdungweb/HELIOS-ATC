@@ -77,6 +77,16 @@
             "show_gift_card_recipient": false
           }
         },
+        "complementary_pwBz8L": {
+          "type": "complementary",
+          "settings": {
+            "block_heading": "MUA CÙNG SẢN PHẨM",
+            "enable_carousel": true,
+            "max_products": 10,
+            "show_vendor": false,
+            "hide_swatches": false
+          }
+        },
         "trust_icons_TyrExf": {
           "type": "trust_icons",
           "settings": {
@@ -95,14 +105,10 @@
             "icon4": "check_mark"
           }
         },
-        "complementary_pwBz8L": {
-          "type": "complementary",
+        "richtext_3YiAcR": {
+          "type": "richtext",
           "settings": {
-            "block_heading": "MUA CÙNG SẢN PHẨM",
-            "enable_carousel": true,
-            "max_products": 10,
-            "show_vendor": false,
-            "hide_swatches": false
+            "text": ""
           }
         },
         "custom_liquid_FW6ge8": {
@@ -158,8 +164,9 @@
         "variant_picker",
         "inventory_level",
         "buy_buttons",
-        "trust_icons_TyrExf",
         "complementary_pwBz8L",
+        "trust_icons_TyrExf",
+        "richtext_3YiAcR",
         "custom_liquid_FW6ge8",
         "text_HiAnXA",
         "accordion_9czNHQ",
