@@ -89,7 +89,6 @@
         },
         "trust_icons_TyrExf": {
           "type": "trust_icons",
-          "disabled": true,
           "settings": {
             "icon_size": 30,
             "show_icon1": true,
