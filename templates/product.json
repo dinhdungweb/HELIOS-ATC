@@ -114,7 +114,6 @@
         },
         "custom_liquid_FW6ge8": {
           "type": "custom_liquid",
-          "disabled": true,
           "settings": {
             "custom_liquid": "<a href=\"https://helios.vn/pages/helios-private-call\" style=\"color: #fab320\">ĐĂNG KÝ TƯ VẤN 1:1 ĐỂ TRẢI NGHIỆM TRỰC TIẾP SẢN PHẨM</a>"
           }
@@ -130,8 +129,8 @@
           "type": "accordion",
           "settings": {
             "icon": "none",
-            "title": "Đăng ký tư vấn 1:1",
-            "content": "<p><a href=\"/pages/helios-private-call\" title=\"Helios Private Call\"> ĐĂNG KÝ TƯ VẤN 1:1 ĐỂ TRẢI NGHIỆM TRỰC TIẾP SẢN PHẨM</a></p>",
+            "title": "Thông tin thêm",
+            "content": "<p>Đối với các kích cỡ ngoại size, chúng tôi cần một thời gian để nghiên cứu, căn chỉnh để đảm bảo chất lượng đầu ra của sản phẩm. Do đó, thời gian pre-order có thể lên tới 12 - 14 ngày!</p>",
             "page": "",
             "open": false
           }
