@@ -155,6 +155,13 @@
               "link": "shopify://collections/all-products"
             }
           },
+          "slide_QL8AxT": {
+            "type": "slide",
+            "settings": {
+              "text": "1 ĐỔI 1 TRONG VÒNG 3 NGÀY",
+              "link": "shopify://collections/all-products"
+            }
+          },
           "image_TmBCqG": {
             "type": "image",
             "settings": {
@@ -177,6 +184,7 @@
         "block_order": [
           "slide_LnQdra",
           "slide_fea8Dc",
+          "slide_QL8AxT",
           "image_TmBCqG"
         ],
         "custom_css": [],
