@@ -90,7 +90,7 @@
         "trust_icons_TyrExf": {
           "type": "trust_icons",
           "settings": {
-            "icon_size": 30,
+            "icon_size": 26,
             "show_icon1": true,
             "text1": "<p>Miễn phí đánh sáng trọn đời</p>",
             "icon1": "washing",
