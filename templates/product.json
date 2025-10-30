@@ -171,7 +171,7 @@
         "sticky_behaviour": "none",
         "full_width": false,
         "show_backorder_text": true,
-        "slide_nav_style": "dots",
+        "slide_nav_style": "arrows",
         "media_crop": "center",
         "enable_zoom": false,
         "zoom_cursor": "plus-light",
