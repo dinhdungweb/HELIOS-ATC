@@ -77,16 +77,6 @@
             "show_gift_card_recipient": false
           }
         },
-        "complementary_pwBz8L": {
-          "type": "complementary",
-          "settings": {
-            "block_heading": "MUA CÙNG SẢN PHẨM",
-            "enable_carousel": true,
-            "max_products": 10,
-            "show_vendor": false,
-            "hide_swatches": false
-          }
-        },
         "trust_icons_TyrExf": {
           "type": "trust_icons",
           "settings": {
@@ -105,8 +95,19 @@
             "icon4": "check_mark"
           }
         },
+        "complementary_pwBz8L": {
+          "type": "complementary",
+          "settings": {
+            "block_heading": "MUA CÙNG SẢN PHẨM",
+            "enable_carousel": true,
+            "max_products": 10,
+            "show_vendor": false,
+            "hide_swatches": false
+          }
+        },
         "custom_liquid_FW6ge8": {
           "type": "custom_liquid",
+          "disabled": true,
           "settings": {
             "custom_liquid": "<a href=\"https://helios.vn/pages/helios-private-call\" style=\"color: #fab320\">ĐĂNG KÝ TƯ VẤN 1:1 ĐỂ TRẢI NGHIỆM TRỰC TIẾP SẢN PHẨM</a>"
           }
@@ -157,8 +158,8 @@
         "variant_picker",
         "inventory_level",
         "buy_buttons",
-        "complementary_pwBz8L",
         "trust_icons_TyrExf",
+        "complementary_pwBz8L",
         "custom_liquid_FW6ge8",
         "text_HiAnXA",
         "accordion_9czNHQ",
