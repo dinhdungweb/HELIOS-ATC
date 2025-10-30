@@ -166,6 +166,9 @@
         "accordion_RN6Adz",
         "accordion_WnzprC"
       ],
+      "custom_css": [
+        ".product-area .product-detail__gap-lg {padding-top: 0;}"
+      ],
       "settings": {
         "media_style": "one-column",
         "sticky_behaviour": "none",
