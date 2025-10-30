@@ -107,6 +107,7 @@
         },
         "richtext_3YiAcR": {
           "type": "richtext",
+          "disabled": true,
           "settings": {
             "text": "{{ product.metafields.custom.short_description | metafield_tag }}"
           }
