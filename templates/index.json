@@ -278,15 +278,15 @@
             "mobile_image": "shopify://shop_images/6.9_design_nh_ctrinh_private_call_2-04_2.jpg",
             "slide_link": "shopify://collections/leather-items",
             "subheading": "",
-            "title": "",
+            "title": "LEATHER ITEMS",
             "title_size": 60,
             "title_width": 12,
             "heading_h1": false,
             "text": "",
             "enlarge_text": false,
             "button_label": "",
-            "overlay_position": "position--hcenter position--vcenter",
-            "overlay_position_mobile": "position--hcenter-xs position--vcenter-xs"
+            "overlay_position": "position--hcenter position--bottom",
+            "overlay_position_mobile": "position--hcenter-xs position--bottom-xs"
           }
         }
       },
