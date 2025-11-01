@@ -200,7 +200,7 @@
     "product_feedback_gallery_XyZ123": {
       "type": "product-feedback-gallery",
       "settings": {
-        "heading": "Feedback từ khách hàng",
+        "heading": "Feedback Từ Khách Hàng",
         "description": "<p>Những hình ảnh thực tế từ khách hàng đã sử dụng sản phẩm</p>",
         "section_width": "custom",
         "custom_width": 1350,
