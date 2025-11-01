@@ -202,7 +202,7 @@
       "settings": {
         "heading": "Feedback từ khách hàng",
         "description": "<p>Những hình ảnh thực tế từ khách hàng đã sử dụng sản phẩm</p>",
-        "heading_color": "#000000",
+        "heading_color": "#ffffff",
         "text_color": "#666666",
         "image_size": 200,
         "grid_gap": 20,
