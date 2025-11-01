@@ -211,7 +211,7 @@
         "text_color": "#666666",
         "grid_gap": 20,
         "border_radius": 8,
-        "show_overlay": true,
+        "show_overlay": false,
         "margin_top": 40,
         "margin_bottom": 40
       }
