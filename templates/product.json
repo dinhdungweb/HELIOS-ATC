@@ -255,7 +255,7 @@
         "images_per_row_tablet": 3,
         "images_per_row_mobile": 2,
         "heading_color": "#ffffff",
-        "text_color": "#d6d6d6",
+        "text_color": "#666666",
         "grid_gap": 20,
         "border_radius": 6,
         "show_overlay": false,
