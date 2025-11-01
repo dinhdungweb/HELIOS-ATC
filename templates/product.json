@@ -197,6 +197,14 @@
       "type": "tab-description",
       "settings": {}
     },
+    "custom_liquid_p3PHPB": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid/HTML",
+      "settings": {
+        "no_margins": true,
+        "custom_liquid": "{{ product.custom.feedback.value }}"
+      }
+    },
     "image_with_text_kUyLYN": {
       "type": "image-with-text",
       "custom_css": [
@@ -327,6 +335,7 @@
     "custom_liquid_C3UJwm",
     "main",
     "tab_description_Mct6Bb",
+    "custom_liquid_p3PHPB",
     "image_with_text_kUyLYN",
     "image_with_text_xAeKkA",
     "accordions_gkjQkM",
