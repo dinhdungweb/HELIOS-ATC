@@ -251,7 +251,7 @@
         "description": "<p>Những hình ảnh thực tế từ khách hàng đã sử dụng sản phẩm</p>",
         "section_width": "custom",
         "custom_width": 1350,
-        "images_per_row_desktop": 4,
+        "images_per_row_desktop": 3,
         "images_per_row_tablet": 3,
         "images_per_row_mobile": 2,
         "heading_color": "#ffffff",
