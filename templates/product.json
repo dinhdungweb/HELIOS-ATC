@@ -197,12 +197,19 @@
       "type": "tab-description",
       "settings": {}
     },
-    "custom_liquid_p3PHPB": {
-      "type": "custom-liquid",
-      "name": "Custom Liquid/HTML",
+    "product_feedback_gallery_XyZ123": {
+      "type": "product-feedback-gallery",
       "settings": {
-        "no_margins": true,
-        "custom_liquid": "{% if product.metafields.custom.feedback.value %}\n  <div class=\"customer-feedback-section\">\n    <h3 class=\"feedback-title\">Feedback từ khách hàng</h3>\n    <div class=\"feedback-gallery\">\n      {% for image in product.metafields.custom.feedback.value %}\n        <div class=\"feedback-item\">\n          <img \n            src=\"{{ image | image_url: width: 600 }}\" \n            alt=\"Feedback từ khách hàng {{ forloop.index }}\" \n            loading=\"lazy\"\n          >\n        </div>\n      {% endfor %}\n    </div>\n  </div>\n\n  <style>\n    .customer-feedback-section {\n    margin-top: 40px;\n    max-width: 1350px;\n    width: 100%;\n}\n    .feedback-title {\n      font-size: 1.4rem;\n      font-weight: 600;\n      margin-bottom: 16px;\n    }\n    .feedback-gallery {\n      display: flex;\n      flex-wrap: wrap;\n      gap: 20px;\n    }\n    .feedback-item img {\n      width: 100%;\n      max-width: calc(1350px / 4 - 60px);\n      object-fit: cover;\n      transition: transform 0.2s ease;\n    }\n    .feedback-item img:hover {\n      transform: scale(1.05);\n    }\n  </style>\n{% endif %}"
+        "heading": "Feedback từ khách hàng",
+        "description": "<p>Những hình ảnh thực tế từ khách hàng đã sử dụng sản phẩm</p>",
+        "heading_color": "#000000",
+        "text_color": "#666666",
+        "image_size": 280,
+        "grid_gap": 20,
+        "border_radius": 8,
+        "show_overlay": true,
+        "margin_top": 40,
+        "margin_bottom": 40
       }
     },
     "image_with_text_kUyLYN": {
@@ -335,7 +342,7 @@
     "custom_liquid_C3UJwm",
     "main",
     "tab_description_Mct6Bb",
-    "custom_liquid_p3PHPB",
+    "product_feedback_gallery_XyZ123",
     "image_with_text_kUyLYN",
     "image_with_text_xAeKkA",
     "accordions_gkjQkM",
