@@ -202,7 +202,7 @@
       "name": "Custom Liquid/HTML",
       "settings": {
         "no_margins": true,
-        "custom_liquid": "{{ product.custom.feedback.value }}"
+        "custom_liquid": "{{ metafield.product.custom.feedback }} HELIOS"
       }
     },
     "image_with_text_kUyLYN": {
