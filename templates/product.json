@@ -259,7 +259,7 @@
         "grid_gap": 20,
         "border_radius": 8,
         "show_overlay": false,
-        "margin_top": 40,
+        "margin_top": 72,
         "margin_bottom": 40
       }
     },
