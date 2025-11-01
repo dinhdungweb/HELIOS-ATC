@@ -197,25 +197,6 @@
       "type": "tab-description",
       "settings": {}
     },
-    "product_feedback_gallery_XyZ123": {
-      "type": "product-feedback-gallery",
-      "settings": {
-        "heading": "Feedback Từ Khách Hàng",
-        "description": "<p>Những hình ảnh thực tế từ khách hàng đã sử dụng sản phẩm</p>",
-        "section_width": "custom",
-        "custom_width": 1350,
-        "images_per_row_desktop": 4,
-        "images_per_row_tablet": 3,
-        "images_per_row_mobile": 2,
-        "heading_color": "#ffffff",
-        "text_color": "#666666",
-        "grid_gap": 20,
-        "border_radius": 8,
-        "show_overlay": false,
-        "margin_top": 40,
-        "margin_bottom": 40
-      }
-    },
     "image_with_text_kUyLYN": {
       "type": "image-with-text",
       "custom_css": [
@@ -261,6 +242,25 @@
         "color_scheme": "custom",
         "color_bg": "#0c0c0c",
         "color_text": ""
+      }
+    },
+    "product_feedback_gallery_XyZ123": {
+      "type": "product-feedback-gallery",
+      "settings": {
+        "heading": "Feedback Từ Khách Hàng",
+        "description": "<p>Những hình ảnh thực tế từ khách hàng đã sử dụng sản phẩm</p>",
+        "section_width": "custom",
+        "custom_width": 1350,
+        "images_per_row_desktop": 4,
+        "images_per_row_tablet": 3,
+        "images_per_row_mobile": 2,
+        "heading_color": "#ffffff",
+        "text_color": "#666666",
+        "grid_gap": 20,
+        "border_radius": 8,
+        "show_overlay": false,
+        "margin_top": 40,
+        "margin_bottom": 40
       }
     },
     "accordions_gkjQkM": {
@@ -346,9 +346,9 @@
     "custom_liquid_C3UJwm",
     "main",
     "tab_description_Mct6Bb",
-    "product_feedback_gallery_XyZ123",
     "image_with_text_kUyLYN",
     "image_with_text_xAeKkA",
+    "product_feedback_gallery_XyZ123",
     "accordions_gkjQkM",
     "product-recommendations"
   ]
