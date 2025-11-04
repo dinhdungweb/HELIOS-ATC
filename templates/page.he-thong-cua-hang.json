@@ -204,7 +204,9 @@
         "image_tcEPNA",
         "image_h9W9Uj"
       ],
-      "custom_css": [],
+      "custom_css": [
+        "#section-id-template--20686354350301__grid_image_H49h3Q {padding: 20px!important;}"
+      ],
       "name": "Image Grid",
       "settings": {
         "grid_image_full_width": true,
