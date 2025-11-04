@@ -347,15 +347,6 @@
 // };
 
   </script>
-  <script>
-    // Lấy thông tin quốc gia từ Shopify
-    var country = Shopify.country;
-    
-    // Nếu khách không phải ở Vietnam, chuyển sang website global
-    if (country !== 'VN') {
-      window.location.href = 'https://heliosglobalbrand.com';
-    }
-  </script>
   <script src="{{ 'vendor.min.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'theme-addons.js' | asset_url }}" defer="defer"></script>
