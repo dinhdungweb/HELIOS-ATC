@@ -37,7 +37,7 @@
         "color_text": ""
       }
     },
-    "rich_text_angUgj": {
+    "rich_text_KBHHh9": {
       "type": "rich-text",
       "name": "Rich text",
       "settings": {
@@ -103,7 +103,7 @@
         "image_gezBQX"
       ],
       "custom_css": [
-        "#section-id-template--20686354350301__grid_image_QWbchx {padding: 20px!important;}"
+        "#section-id-template--20686354350301__grid_image_QWbchx {padding: 20px !important;}"
       ],
       "name": "Image Grid",
       "settings": {
@@ -138,13 +138,116 @@
         "color_bg": "",
         "color_text": ""
       }
+    },
+    "rich_text_angUgj": {
+      "type": "rich-text",
+      "name": "Rich text",
+      "settings": {
+        "subheading": "",
+        "title": "HELIOS Vincom Center Đồng Khởi",
+        "title_size": 20,
+        "title_width": 26,
+        "heading_h1": false,
+        "text": "",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "left",
+        "enlarge_text": false,
+        "full_width": true,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "grid_image_H49h3Q": {
+      "type": "grid-image",
+      "blocks": {
+        "image_XW3HRj": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DSC0619.jpg",
+            "link": "",
+            "text": ""
+          }
+        },
+        "image_CbKNdX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DSC0651.jpg",
+            "link": "",
+            "text": ""
+          }
+        },
+        "image_tcEPNA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DSC0627.jpg",
+            "link": "",
+            "text": ""
+          }
+        },
+        "image_h9W9Uj": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DSC0629.jpg",
+            "link": "",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_XW3HRj",
+        "image_CbKNdX",
+        "image_tcEPNA",
+        "image_h9W9Uj"
+      ],
+      "custom_css": [],
+      "name": "Image Grid",
+      "settings": {
+        "grid_image_full_width": true,
+        "grid_image_with": 1400,
+        "item_for_row": 4,
+        "item_per_row_mobile": "1"
+      }
+    },
+    "rich_text_pWfyXb": {
+      "type": "rich-text",
+      "custom_css": [
+        ".section-spacing {padding-top: 0 !important;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "title_size": 48,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<ul><li>Gian 18 - 19, Lô B1-38-48, tầng B1, TTTM Vincom Center Đồng Khởi, Phường Sài Gòn, Hồ Chí Minh.</li><li>Liên hệ: <a>0336 302 899</a></li></ul><p><a href=\"https://maps.app.goo.gl/oKpNaioYGCR6qzBM6\" title=\"https://maps.app.goo.gl/oKpNaioYGCR6qzBM6\">Xem trên bản đồ</a></p><p>Tọa lạc trong khu tổ hợp The New Playground, cửa hàng mang đến không gian kết nối gần hơn với cộng đồng yêu thích chế tác bạc thủ công, từ Việt Nam đến quốc tế.</p>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "left",
+        "enlarge_text": false,
+        "full_width": true,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
     }
   },
   "order": [
     "main",
     "rich_text_iNEMAi",
-    "rich_text_angUgj",
+    "rich_text_KBHHh9",
     "grid_image_QWbchx",
-    "rich_text_LMUrNQ"
+    "rich_text_LMUrNQ",
+    "rich_text_angUgj",
+    "grid_image_H49h3Q",
+    "rich_text_pWfyXb"
   ]
 }
