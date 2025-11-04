@@ -102,6 +102,9 @@
         "image_krM83K",
         "image_gezBQX"
       ],
+      "custom_css": [
+        "#section-id-template--20686354350301__grid_image_QWbchx {padding: 20px!important;}"
+      ],
       "name": "Image Grid",
       "settings": {
         "grid_image_full_width": true,
@@ -113,7 +116,7 @@
     "rich_text_LMUrNQ": {
       "type": "rich-text",
       "custom_css": [
-        ".section-spacing {padding-top: 0!important;}"
+        ".section-spacing {padding-top: 0 !important;}"
       ],
       "name": "Rich text",
       "settings": {
