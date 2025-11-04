@@ -346,11 +346,17 @@
 //     };
 // };
   <script>
-  var country = Shopify.country;
-
-  if (country !== 'VN') {
-    window.location.href = 'https://heliosglobalbrand.com';
-  }
+    fetch('https://ipapi.co/json/')
+      .then(response => response.json())
+      .then(data => {
+        var country = data.country_code;
+        
+        // Nếu không phải Vietnam, chuyển hướng
+        if (country !== 'VN') {
+          window.location.href = 'https://heliosglobalbrand.com';
+        }
+      })
+      .catch(error => console.log('Geo check error:', error));
   </script>
   </script>
   <script src="{{ 'vendor.min.js' | asset_url }}" defer="defer"></script>
