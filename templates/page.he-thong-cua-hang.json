@@ -113,7 +113,7 @@
     "rich_text_LMUrNQ": {
       "type": "rich-text",
       "custom_css": [
-        ".section-spacing {}"
+        ".section-spacing {padding-top: 0!important;}"
       ],
       "name": "Rich text",
       "settings": {
