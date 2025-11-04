@@ -208,7 +208,7 @@
           "announcement_hotline": "0981.956.116",
           "announcement_email": "support@helios.vn",
           "announcement_custom": "Hệ thống cửa hàng",
-          "announcement_custom_link": "shopify://pages/contact",
+          "announcement_custom_link": "shopify://pages/he-thong-cua-hang",
           "nav_cart_icon": "basket2",
           "show_country_selector": true,
           "show_language_selector": true
@@ -369,11 +369,6 @@
       "855628211100114053": {
         "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": true,
-        "settings": {}
-      },
-      "5550728556201851227": {
-        "type": "shopify://apps/geolocation-glc/blocks/selector/e347b539-0714-46e4-9e69-23a73992ae3a",
-        "disabled": false,
         "settings": {}
       }
     }
