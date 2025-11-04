@@ -112,6 +112,9 @@
     },
     "rich_text_LMUrNQ": {
       "type": "rich-text",
+      "custom_css": [
+        ".section-spacing {}"
+      ],
       "name": "Rich text",
       "settings": {
         "subheading": "",
