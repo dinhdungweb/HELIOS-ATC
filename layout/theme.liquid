@@ -345,7 +345,13 @@
 //         document.getElementById('popup-nqsh').style.display = 'none';
 //     };
 // };
+  <script>
+  var country = Shopify.country;
 
+  if (country !== 'VN') {
+    window.location.href = 'https://heliosglobalbrand.com';
+  }
+  </script>
   </script>
   <script src="{{ 'vendor.min.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
