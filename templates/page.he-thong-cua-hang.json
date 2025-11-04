@@ -205,7 +205,7 @@
         "image_h9W9Uj"
       ],
       "custom_css": [
-        "#section-id-template--20686354350301__grid_image_H49h3Q {padding: 20px!important;}"
+        "#section-id-template--20686354350301__grid_image_H49h3Q {padding: 20px !important;}"
       ],
       "name": "Image Grid",
       "settings": {
@@ -240,6 +240,108 @@
         "color_bg": "",
         "color_text": ""
       }
+    },
+    "rich_text_xTnhBe": {
+      "type": "rich-text",
+      "name": "Rich text",
+      "settings": {
+        "subheading": "",
+        "title": "HELIOS Bà Hạt",
+        "title_size": 20,
+        "title_width": 26,
+        "heading_h1": false,
+        "text": "",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "left",
+        "enlarge_text": false,
+        "full_width": true,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "grid_image_3FeCdE": {
+      "type": "grid-image",
+      "blocks": {
+        "image_6wANnT": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DSC0619.jpg",
+            "link": "",
+            "text": ""
+          }
+        },
+        "image_HpcKxf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DSC0651.jpg",
+            "link": "",
+            "text": ""
+          }
+        },
+        "image_3kLcNU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DSC0627.jpg",
+            "link": "",
+            "text": ""
+          }
+        },
+        "image_f7FUmX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DSC0629.jpg",
+            "link": "",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_6wANnT",
+        "image_HpcKxf",
+        "image_3kLcNU",
+        "image_f7FUmX"
+      ],
+      "custom_css": [
+        "#section-id-template--20686354350301__grid_image_H49h3Q {padding: 20px !important;}"
+      ],
+      "name": "Image Grid",
+      "settings": {
+        "grid_image_full_width": true,
+        "grid_image_with": 1400,
+        "item_for_row": 4,
+        "item_per_row_mobile": "1"
+      }
+    },
+    "rich_text_6Faif3": {
+      "type": "rich-text",
+      "custom_css": [
+        ".section-spacing {padding-top: 0 !important;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "title_size": 48,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<ul><li>371 Bà Hạt, Phường Vườn Lài, Hồ Chí Minh.</li><li>Liên hệ: 0794 302 899</li></ul><p><a href=\"https://maps.app.goo.gl/dd8uPk4GBjw4jELk6\" title=\"https://maps.app.goo.gl/dd8uPk4GBjw4jELk6\">Xem trên bản đồ</a></p><p>HELIOS Bà Hạt mang đến không gian gần gũi, nơi bạn có thể cảm nhận tinh thần thủ công và khác biệt qua từng chế tác</p>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "left",
+        "enlarge_text": false,
+        "full_width": true,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
     }
   },
   "order": [
@@ -250,6 +352,9 @@
     "rich_text_LMUrNQ",
     "rich_text_angUgj",
     "grid_image_H49h3Q",
-    "rich_text_pWfyXb"
+    "rich_text_pWfyXb",
+    "rich_text_xTnhBe",
+    "grid_image_3FeCdE",
+    "rich_text_6Faif3"
   ]
 }
