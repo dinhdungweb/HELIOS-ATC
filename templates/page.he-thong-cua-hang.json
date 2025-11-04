@@ -342,6 +342,102 @@
         "color_bg": "",
         "color_text": ""
       }
+    },
+    "rich_text_Hy4w8R": {
+      "type": "rich-text",
+      "name": "Rich text",
+      "settings": {
+        "subheading": "",
+        "title": "HELIOS Lê Thanh Nghị",
+        "title_size": 20,
+        "title_width": 26,
+        "heading_h1": false,
+        "text": "",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "left",
+        "enlarge_text": false,
+        "full_width": true,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "grid_image_KpbGfQ": {
+      "type": "grid-image",
+      "blocks": {
+        "image_GLFPxM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DSC0619.jpg",
+            "link": "",
+            "text": ""
+          }
+        },
+        "image_yHqgPn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DSC0651.jpg",
+            "link": "",
+            "text": ""
+          }
+        },
+        "image_kCzVqq": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DSC0627.jpg",
+            "link": "",
+            "text": ""
+          }
+        },
+        "image_Ae9tQE": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DSC0629.jpg",
+            "link": "",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_GLFPxM",
+        "image_yHqgPn",
+        "image_kCzVqq",
+        "image_Ae9tQE"
+      ],
+      "name": "Image Grid",
+      "settings": {
+        "grid_image_full_width": true,
+        "grid_image_with": 1400,
+        "item_for_row": 4,
+        "item_per_row_mobile": "2"
+      }
+    },
+    "rich_text_fDwPzE": {
+      "type": "rich-text",
+      "name": "Rich text",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "title_size": 48,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<ul><li>4/104 Lê Thanh Nghị, Phường Bạch Mai, Hà Nội. </li><li>Liên hệ:  0964 302 899</li></ul><p><a href=\"https://maps.app.goo.gl/dd8uPk4GBjw4jELk6\" title=\"https://maps.app.goo.gl/dd8uPk4GBjw4jELk6\">Xem trên bản đồ</a></p><p>Nơi bắt đầu hành trình của HELIOS, trải nghiệm phong cách sống đầy bản lĩnh ngay tại cửa hàng đầu tiên của chúng tôi.</p>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "left",
+        "enlarge_text": false,
+        "full_width": true,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
     }
   },
   "order": [
@@ -355,6 +451,9 @@
     "rich_text_pWfyXb",
     "rich_text_xTnhBe",
     "grid_image_3FeCdE",
-    "rich_text_6Faif3"
+    "rich_text_6Faif3",
+    "rich_text_Hy4w8R",
+    "grid_image_KpbGfQ",
+    "rich_text_fDwPzE"
   ]
 }
