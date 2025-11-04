@@ -408,6 +408,9 @@
         "image_kCzVqq",
         "image_Ae9tQE"
       ],
+      "custom_css": [
+        "#section-id-template--20686354350301__grid_image_KpbGfQ {padding: 20px !important;}"
+      ],
       "name": "Image Grid",
       "settings": {
         "grid_image_full_width": true,
@@ -418,6 +421,9 @@
     },
     "rich_text_fDwPzE": {
       "type": "rich-text",
+      "custom_css": [
+        ".section-spacing {padding-top: 0 !important;}"
+      ],
       "name": "Rich text",
       "settings": {
         "subheading": "",
