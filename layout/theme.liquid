@@ -345,19 +345,16 @@
 //         document.getElementById('popup-nqsh').style.display = 'none';
 //     };
 // };
-  <script>
-    fetch('https://ipapi.co/json/')
-      .then(response => response.json())
-      .then(data => {
-        var country = data.country_code;
-        
-        // Nếu không phải Vietnam, chuyển hướng
-        if (country !== 'VN') {
-          window.location.href = 'https://heliosglobalbrand.com';
-        }
-      })
-      .catch(error => console.log('Geo check error:', error));
+
   </script>
+  <script>
+    // Lấy thông tin quốc gia từ Shopify
+    var country = Shopify.country;
+    
+    // Nếu khách không phải ở Vietnam, chuyển sang website global
+    if (country !== 'VN') {
+      window.location.href = 'https://yourglobal-domain.com';
+    }
   </script>
   <script src="{{ 'vendor.min.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
