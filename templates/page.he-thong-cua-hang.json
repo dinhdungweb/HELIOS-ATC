@@ -42,6 +42,29 @@
       "name": "Rich text",
       "settings": {
         "subheading": "",
+        "title": "<font style=\"color: #FAB320\">HELIOS HỒ CHÍ MINH</font>",
+        "title_size": 28,
+        "title_width": 26,
+        "heading_h1": false,
+        "text": "",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "left",
+        "enlarge_text": false,
+        "full_width": true,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "rich_text_ECre7U": {
+      "type": "rich-text",
+      "name": "Rich text",
+      "settings": {
+        "subheading": "",
         "title": "HELIOS Nguyễn Gia Trí - Flagship Store",
         "title_size": 20,
         "title_width": 26,
@@ -343,6 +366,29 @@
         "color_text": ""
       }
     },
+    "rich_text_8yjx4N": {
+      "type": "rich-text",
+      "name": "Rich text",
+      "settings": {
+        "subheading": "",
+        "title": "HELIOS HÀ NỘI",
+        "title_size": 28,
+        "title_width": 26,
+        "heading_h1": false,
+        "text": "",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "left",
+        "enlarge_text": false,
+        "full_width": true,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
     "rich_text_Hy4w8R": {
       "type": "rich-text",
       "name": "Rich text",
@@ -445,7 +491,7 @@
         "color_text": ""
       }
     },
-    "rich_text_8yjx4N": {
+    "rich_text_KQMLyb": {
       "type": "rich-text",
       "name": "Rich text",
       "settings": {
@@ -552,6 +598,7 @@
     "main",
     "rich_text_iNEMAi",
     "rich_text_KBHHh9",
+    "rich_text_ECre7U",
     "grid_image_QWbchx",
     "rich_text_LMUrNQ",
     "rich_text_angUgj",
@@ -560,10 +607,11 @@
     "rich_text_xTnhBe",
     "grid_image_3FeCdE",
     "rich_text_6Faif3",
+    "rich_text_8yjx4N",
     "rich_text_Hy4w8R",
     "grid_image_KpbGfQ",
     "rich_text_fDwPzE",
-    "rich_text_8yjx4N",
+    "rich_text_KQMLyb",
     "grid_image_QqpRqi",
     "rich_text_W69Wdt"
   ]
