@@ -85,6 +85,11 @@
     assign card_images = images_after_featured | append: images_before_featured | replace: ",,", "," | remove_first: ","
   endif
 
+  assign has_featured_video = false
+  if product.featured_media != blank and product.featured_media.media_type == "video"
+    assign has_featured_video = true
+  endif
+
   if external_video_url == blank and mp4_url == blank
     assign featured = product.featured_media
 
@@ -120,7 +125,7 @@
   {% if product.tags contains 'meta-layout-right' %}layout-right{% endif %}
   {% if settings.prod_label_layout == 'marquee_on_hover' %} product-block--marquee-on-hover {% endif%}
   {% if settings.quickbuy_enabled %}product-block--quickbuy{% endif %}
-  {% if mp4_url != blank or external_video_url != blank or (featured != blank and featured.media_type == "video") %}product-block--video{% endif %}
+  {% if mp4_url != blank or external_video_url != blank or has_featured_video %}product-block--video{% endif %}
   {% if product_has_swatches %}product-block--has-swatches{% endif %}
   {{ product_class }}"
      data-loop-index="{{ i }}"
@@ -144,8 +149,8 @@
             {% render 'inline-video', video_external: external_video_url, image: primary_image %}
           {% elsif mp4_url != blank %}
             {% render 'inline-video', video: mp4_url, image: primary_image %}
-          {% elsif featured != blank and featured.media_type == "video" %}
-            {% render 'inline-video', video_shopify: featured, image: primary_image %}
+          {% elsif product.featured_media != blank and product.featured_media.media_type == "video" %}
+            {% render 'inline-video', video_shopify: product.featured_media, image: primary_image %}
           {% elsif custom_card_image_file_field != blank %}
             <img class="rimage__image" src="{{ custom_card_image_file_field | file_url }}" alt="{{ product.title | escape }}" loading="lazy">
           {% elsif custom_card_image_url_field != blank %}
