@@ -33,8 +33,7 @@
   assign custom_card_image_file_field = product.metafields.custom.card_featured_image_file
   assign custom_card_video_mp4_file_field = product.metafields.custom.card_featured_video_mp4_file
   assign media_image_file_field = product.metafields.custom.media_image_file
-  assign media_video_file_field = product.metafields.custom.media_video_file
-  assign media_file_field = product.metafields.custom.media_file
+  
 
   if custom_card_video_external_field != blank
     assign external_video_url = custom_card_video_external_field.value | default: custom_card_video_external_field | strip
@@ -48,22 +47,7 @@
     assign mp4_url = custom_card_video_mp4_file_field | file_url
   endif
 
-  if media_video_file_field != blank and external_video_url == blank and mp4_url == blank
-    assign mp4_url = media_video_file_field | file_url
-  endif
-
-  if media_image_file_field != blank and custom_card_image_file_field == blank
-    assign card_image_file_url = media_image_file_field | file_url
-  endif
-
-  if media_file_field != blank
-    assign generic_file_url = media_file_field | file_url
-    if mp4_url == blank and generic_file_url contains '.mp4'
-      assign mp4_url = generic_file_url
-    elsif card_image_file_url == blank and custom_card_image_file_field == blank
-      assign card_image_file_url = generic_file_url
-    endif
-  endif
+  
 
   if settings.prod_hover == "second_image"
     assign secondary_image = product.media[1].preview_image
@@ -185,8 +169,6 @@
             {% render 'inline-video', video_external: external_video_url, image: primary_image %}
           {% elsif mp4_url != blank %}
             {% render 'inline-video', video: mp4_url, image: primary_image %}
-          {% elsif card_image_file_url != blank %}
-            <img class="rimage__image" src="{{ card_image_file_url }}" alt="{{ product.title | escape }}" loading="lazy">
           {% elsif custom_card_image_file_field != blank %}
             <img class="rimage__image" src="{{ custom_card_image_file_field | file_url }}" alt="{{ product.title | escape }}" loading="lazy">
           {% elsif custom_card_image_url_field != blank %}
