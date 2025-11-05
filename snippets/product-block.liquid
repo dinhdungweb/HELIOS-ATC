@@ -27,6 +27,44 @@
   assign primary_image = product.featured_media.preview_image
   assign product_images = product.media | where: 'media_type', 'image'
 
+  assign custom_card_image_url_field = product.metafields.custom.card_featured_image_url
+  assign custom_card_video_external_field = product.metafields.custom.card_featured_video_external
+  assign custom_card_video_mp4_field = product.metafields.custom.card_featured_video_mp4
+  assign custom_card_image_file_field = product.metafields.custom.card_featured_image_file
+  assign custom_card_video_mp4_file_field = product.metafields.custom.card_featured_video_mp4_file
+  assign media_image_file_field = product.metafields.custom.media_image_file
+  assign media_video_file_field = product.metafields.custom.media_video_file
+  assign media_file_field = product.metafields.custom.media_file
+
+  if custom_card_video_external_field != blank
+    assign external_video_url = custom_card_video_external_field.value | default: custom_card_video_external_field | strip
+  endif
+
+  if custom_card_video_mp4_field != blank and external_video_url == blank
+    assign mp4_url = custom_card_video_mp4_field.value | default: custom_card_video_mp4_field | strip
+  endif
+
+  if custom_card_video_mp4_file_field != blank and external_video_url == blank and mp4_url == blank
+    assign mp4_url = custom_card_video_mp4_file_field | file_url
+  endif
+
+  if media_video_file_field != blank and external_video_url == blank and mp4_url == blank
+    assign mp4_url = media_video_file_field | file_url
+  endif
+
+  if media_image_file_field != blank and custom_card_image_file_field == blank
+    assign card_image_file_url = media_image_file_field | file_url
+  endif
+
+  if media_file_field != blank
+    assign generic_file_url = media_file_field | file_url
+    if mp4_url == blank and generic_file_url contains '.mp4'
+      assign mp4_url = generic_file_url
+    elsif card_image_file_url == blank and custom_card_image_file_field == blank
+      assign card_image_file_url = generic_file_url
+    endif
+  endif
+
   if settings.prod_hover == "second_image"
     assign secondary_image = product.media[1].preview_image
 
@@ -63,18 +101,49 @@
     assign card_images = images_after_featured | append: images_before_featured | replace: ",,", "," | remove_first: ","
   endif
 
-  if settings.prod_show_videos
-    assign videos = product.media | where: "media_type", "video"
-    unless videos == blank
-      for source in videos[0].sources
+  if settings.prod_show_videos and external_video_url == blank and mp4_url == blank
+    assign featured = product.featured_media
+
+    if featured != blank and featured.media_type == "video"
+      for source in featured.sources
         if source != blank and source.format == "mp4"
           assign video_source = source
           break
         endif
       endfor
-
       assign mp4_url = video_source.url
-    endunless
+    elsif featured != blank and featured.media_type == "external_video"
+      if featured.host == "youtube"
+        assign external_video_url = "https://www.youtube.com/watch?v=" | append: featured.external_id
+      elsif featured.host == "vimeo"
+        assign external_video_url = "https://vimeo.com/" | append: featured.external_id
+      endif
+    endif
+
+    if mp4_url == blank and external_video_url == blank
+      assign videos = product.media | where: "media_type", "video"
+      unless videos == blank
+        for source in videos[0].sources
+          if source != blank and source.format == "mp4"
+            assign video_source = source
+            break
+          endif
+        endfor
+        assign mp4_url = video_source.url
+      endunless
+
+      if mp4_url == blank
+        assign externals = product.media | where: "media_type", "external_video"
+        unless externals == blank
+          assign first_external = externals[0]
+          if first_external.host == "youtube"
+            assign external_video_url = "https://www.youtube.com/watch?v=" | append: first_external.external_id
+          elsif first_external.host == "vimeo"
+            assign external_video_url = "https://vimeo.com/" | append: first_external.external_id
+          endif
+        endunless
+      endif
+    endif
   endif
 
   assign param_symbol = "?"
@@ -92,7 +161,7 @@
   {% if product.tags contains 'meta-layout-right' %}layout-right{% endif %}
   {% if settings.prod_label_layout == 'marquee_on_hover' %} product-block--marquee-on-hover {% endif%}
   {% if settings.quickbuy_enabled %}product-block--quickbuy{% endif %}
-  {% if mp4_url != blank %}product-block--video{% endif %}
+  {% if mp4_url != blank or external_video_url != blank %}product-block--video{% endif %}
   {% if product_has_swatches %}product-block--has-swatches{% endif %}
   {{ product_class }}"
      data-loop-index="{{ i }}"
@@ -112,8 +181,17 @@
 
       <a data-cc-animate-click class="image-inner" href="{{ product_url }}" aria-label="{{ product.title | escape }}" tabindex="-1">
         <div class="image__first">
-          {% if mp4_url != blank %}
+          {% if external_video_url != blank %}
+            {% render 'inline-video', video_external: external_video_url, image: primary_image %}
+          {% elsif mp4_url != blank %}
             {% render 'inline-video', video: mp4_url, image: primary_image %}
+          {% elsif card_image_file_url != blank %}
+            <img class="rimage__image" src="{{ card_image_file_url }}" alt="{{ product.title | escape }}" loading="lazy">
+          {% elsif custom_card_image_file_field != blank %}
+            <img class="rimage__image" src="{{ custom_card_image_file_field | file_url }}" alt="{{ product.title | escape }}" loading="lazy">
+          {% elsif custom_card_image_url_field != blank %}
+            {% assign custom_card_image_url = custom_card_image_url_field.value | default: custom_card_image_url_field | strip %}
+            <img class="rimage__image" src="{{ custom_card_image_url }}" alt="{{ product.title | escape }}" loading="lazy">
           {% else %}
             {% render 'responsive-image', image: primary_image, min_aspect_ratio: 0.6 %}
           {% endif %}
