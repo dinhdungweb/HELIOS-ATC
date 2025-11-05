@@ -103,31 +103,6 @@
         assign external_video_url = "https://vimeo.com/" | append: featured.external_id
       endif
     endif
-
-    if mp4_url == blank and external_video_url == blank
-      assign videos = product.media | where: "media_type", "video"
-      unless videos == blank
-        for source in videos[0].sources
-          if source != blank and source.format == "mp4"
-            assign video_source = source
-            break
-          endif
-        endfor
-        assign mp4_url = video_source.url
-      endunless
-
-      if mp4_url == blank
-        assign externals = product.media | where: "media_type", "external_video"
-        unless externals == blank
-          assign first_external = externals[0]
-          if first_external.host == "youtube"
-            assign external_video_url = "https://www.youtube.com/watch?v=" | append: first_external.external_id
-          elsif first_external.host == "vimeo"
-            assign external_video_url = "https://vimeo.com/" | append: first_external.external_id
-          endif
-        endunless
-      endif
-    endif
   endif
 
   assign param_symbol = "?"
