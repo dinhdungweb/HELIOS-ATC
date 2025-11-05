@@ -101,7 +101,7 @@
     assign card_images = images_after_featured | append: images_before_featured | replace: ",,", "," | remove_first: ","
   endif
 
-  if settings.prod_show_videos and external_video_url == blank and mp4_url == blank
+  if external_video_url == blank and mp4_url == blank
     assign featured = product.featured_media
 
     if featured != blank and featured.media_type == "video"
