@@ -147,10 +147,10 @@
         <div class="image__first">
           {% if external_video_url != blank %}
             {% render 'inline-video', video_external: external_video_url, image: primary_image %}
-          {% elsif product.featured_media != blank and product.featured_media.media_type == "video" %}
-            {% render 'inline-video', video_shopify: product.featured_media, image: primary_image %}
           {% elsif mp4_url != blank %}
             {% render 'inline-video', video: mp4_url, image: primary_image %}
+          {% elsif product.featured_media != blank and product.featured_media.media_type == "video" %}
+            {% render 'inline-video', video_shopify: product.featured_media, image: primary_image %}
           {% elsif custom_card_image_file_field != blank %}
             <img class="rimage__image" src="{{ custom_card_image_file_field | file_url }}" alt="{{ product.title | escape }}" loading="lazy">
           {% elsif custom_card_image_url_field != blank %}
