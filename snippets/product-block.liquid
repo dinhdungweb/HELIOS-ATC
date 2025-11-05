@@ -27,11 +27,11 @@
   assign primary_image = product.featured_media.preview_image
   assign product_images = product.media | where: 'media_type', 'image'
 
-  assign custom_card_image_url_field = product.metafields.custom.featured_image_url
-  assign custom_card_video_external_field = product.metafields.custom.featured_video_external
-  assign custom_card_video_mp4_field = product.metafields.custom.featured_video_mp4
-  assign custom_card_image_file_field = product.metafields.custom.featured_image_file
-  assign custom_card_video_mp4_file_field = product.metafields.custom.featured_video_mp4_file
+  assign custom_card_image_url_field = product.metafields.custom.card_featured_image_url
+  assign custom_card_video_external_field = product.metafields.custom.card_featured_video_external
+  assign custom_card_video_mp4_field = product.metafields.custom.card_featured_video_mp4
+  assign custom_card_image_file_field = product.metafields.custom.card_featured_image_file
+  assign custom_card_video_mp4_file_field = product.metafields.custom.card_featured_video_mp4_file
   assign media_image_file_field = product.metafields.custom.media_image_file
   
 
