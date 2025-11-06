@@ -188,5 +188,52 @@
       "price": "가격",
       "quantity": "수량"
     }
+  },
+  "customer": {
+    "login": {
+      "guest_continue": "계속하다"
+    },
+    "recover_password": {
+      "title": "비밀번호 재설정",
+      "subtext": "비밀번호 재설정을 위한 이메일을 보내드리겠습니다.",
+      "email": "이메일",
+      "submit": "보내다",
+      "cancel": "취소"
+    },
+    "order": {
+      "title": "주문 {{ name }}",
+      "cancelled_on": "주문이 취소되었습니다 {{ date }}",
+      "cancelled_reason": "이유: {{ reason }}",
+      "date": "주문 시간: {{ date }}",
+      "billing_address": "청구지 주소",
+      "payment_status": "결제 상태",
+      "shipping_address": "배송지 주소",
+      "fulfillment_status": "완료 상태",
+      "product": "제품",
+      "sku": "상품코드",
+      "price": "가격",
+      "quantity": "수량",
+      "total": "총",
+      "fulfilled_on": "완료 시간 {{ date }}",
+      "subtotal": "소계",
+      "shipping": "배달",
+      "tax": "세"
+    },
+    "register": {
+      "title": "계정을 생성하세요",
+      "first_name": "성 ",
+      "last_name": "이름",
+      "email": "이메일",
+      "password": "비밀번호",
+      "submit": "계정을 생성하세요",
+      "cancel": "매장으로 돌아가기"
+    },
+    "reset_password": {
+      "title": "비밀번호 재설정",
+      "subtext": "{{ email }} 에 새 비밀번호를 보내주세요",
+      "password": "비밀번호",
+      "password_confirm": "비밀번호 확인",
+      "submit": "비밀번호 재설정"
+    }
   }
 }
