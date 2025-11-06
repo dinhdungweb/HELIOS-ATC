@@ -14,6 +14,25 @@
       "disabled": true,
       "settings": {}
     },
+    "background_video_responsive_LgwVz4": {
+      "type": "background-video-responsive",
+      "name": "Video responsive",
+      "settings": {
+        "video_shopify_desktop": "shopify://files/videos/VID CHO LANDING PAGE 19x5-2.mp4",
+        "video_external_desktop": "",
+        "video_shopify_mobile": "shopify://files/videos/VID CHO LANDING PAGE 1x1-2.mp4",
+        "video_external_mobile": "",
+        "video_full_width": false,
+        "video_original_size": true,
+        "video_full_screen": false,
+        "subtitle": "",
+        "title": "",
+        "title_image_width_desktop": 800,
+        "description": "",
+        "button_label": "",
+        "button_link": ""
+      }
+    },
     "rich_text_iNEMAi": {
       "type": "rich-text",
       "name": "Rich text",
@@ -591,23 +610,6 @@
         "color_scheme": "standard",
         "color_bg": "",
         "color_text": ""
-      }
-    },
-    "background_video_responsive_LgwVz4": {
-      "type": "background-video-responsive",
-      "name": "Video responsive",
-      "settings": {
-        "video_external_desktop": "",
-        "video_external_mobile": "",
-        "video_full_width": true,
-        "video_original_size": false,
-        "video_full_screen": false,
-        "subtitle": "",
-        "title": "",
-        "title_image_width_desktop": 800,
-        "description": "",
-        "button_label": "",
-        "button_link": ""
       }
     }
   },
