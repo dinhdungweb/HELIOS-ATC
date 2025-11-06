@@ -87,6 +87,7 @@
           "type": "banner",
           "settings": {
             "image": "shopify://shop_images/dong-xu-helios-moneta_4.jpg",
+            "video_url": "",
             "link": "",
             "title": "",
             "title_color": "#ffffff",
@@ -107,7 +108,7 @@
             "link": "",
             "title": "",
             "title_color": "#ffffff",
-            "title_bg": "rgba(0,0,0,0.4)",
+            "title_bg": "#00000066",
             "h_align": "center",
             "v_align": "middle",
             "text_align": "center",
@@ -123,6 +124,7 @@
       ],
       "name": "Two Banners",
       "settings": {
+        "overlap_header": true,
         "gap": 0
       }
     },
