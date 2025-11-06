@@ -84,9 +84,9 @@
       "type": "background-video-responsive",
       "name": "Video responsive",
       "settings": {
-        "video_shopify_desktop": "shopify://files/videos/videoweb (1).mov",
+        "video_shopify_desktop": "shopify://files/videos/banner web Đức tin 19x9 (1).mp4",
         "video_external_desktop": "",
-        "video_shopify_mobile": "shopify://files/videos/videoweb mobile (1) (online-video-cutter.com).mp4",
+        "video_shopify_mobile": "shopify://files/videos/banner web Đức tin 2x3 (1).mp4",
         "video_external_mobile": "",
         "video_full_width": false,
         "video_original_size": false,
@@ -95,7 +95,7 @@
         "title": "",
         "title_image_width_desktop": 800,
         "description": "",
-        "button_label": "GIÀNH LẤY KHO BÁU",
+        "button_label": "",
         "button_link": "shopify://collections/halloween"
       }
     },
