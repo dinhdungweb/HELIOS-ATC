@@ -80,6 +80,52 @@
       "disabled": true,
       "settings": {}
     },
+    "two_banner_wRJUew": {
+      "type": "two-banner",
+      "blocks": {
+        "banner_YYG7rL": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify://shop_images/dong-xu-helios-moneta_4.jpg",
+            "link": "",
+            "title": "",
+            "title_color": "#ffffff",
+            "title_bg": "rgba(0,0,0,0)",
+            "h_align": "center",
+            "v_align": "middle",
+            "text_align": "center",
+            "x_offset": 0,
+            "y_offset": 0,
+            "padding": 12
+          }
+        },
+        "banner_MaTkbP": {
+          "type": "banner",
+          "settings": {
+            "video": "shopify://files/videos/QuaywebHộpCIGAR27.9.2025.mp4",
+            "video_url": "",
+            "link": "",
+            "title": "",
+            "title_color": "#ffffff",
+            "title_bg": "rgba(0,0,0,0.4)",
+            "h_align": "center",
+            "v_align": "middle",
+            "text_align": "center",
+            "x_offset": 0,
+            "y_offset": 0,
+            "padding": 12
+          }
+        }
+      },
+      "block_order": [
+        "banner_YYG7rL",
+        "banner_MaTkbP"
+      ],
+      "name": "Two Banners",
+      "settings": {
+        "gap": 0
+      }
+    },
     "background_video_responsive_eqdpnM": {
       "type": "background-video-responsive",
       "name": "Video responsive",
@@ -456,52 +502,6 @@
         "show_secondary_image": true,
         "padding_top": "40",
         "padding_bottom": "40"
-      }
-    },
-    "two_banner_wRJUew": {
-      "type": "two-banner",
-      "blocks": {
-        "banner_YYG7rL": {
-          "type": "banner",
-          "settings": {
-            "image": "shopify://shop_images/dong-xu-helios-moneta_4.jpg",
-            "link": "",
-            "title": "",
-            "title_color": "#ffffff",
-            "title_bg": "rgba(0,0,0,0)",
-            "h_align": "center",
-            "v_align": "middle",
-            "text_align": "center",
-            "x_offset": 0,
-            "y_offset": 0,
-            "padding": 12
-          }
-        },
-        "banner_MaTkbP": {
-          "type": "banner",
-          "settings": {
-            "image": "shopify://shop_images/dong-xu-helios-moneta_2.jpg",
-            "video_url": "",
-            "link": "",
-            "title": "",
-            "title_color": "#ffffff",
-            "title_bg": "rgba(0,0,0,0.4)",
-            "h_align": "center",
-            "v_align": "middle",
-            "text_align": "center",
-            "x_offset": 0,
-            "y_offset": 0,
-            "padding": 12
-          }
-        }
-      },
-      "block_order": [
-        "banner_YYG7rL",
-        "banner_MaTkbP"
-      ],
-      "name": "Two Banners",
-      "settings": {
-        "gap": 0
       }
     }
   },
