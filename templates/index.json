@@ -9,77 +9,6 @@
  */
 {
   "sections": {
-    "1759482370229a0e64": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_3cdc18e_PaFjV9": {
-          "type": "ai_gen_block_3cdc18e",
-          "settings": {
-            "title": "Shop the look",
-            "subtitle": "Get the complete style with these curated pieces",
-            "look_image": "shopify://shop_images/Up_bai_1900_x_900_px_1080_x_1350_px_22.jpg",
-            "button_text": "Shop now",
-            "text_alignment": "center",
-            "section_padding": 40,
-            "content_gap": 30,
-            "header_spacing": 20,
-            "products_spacing": 30,
-            "background_color": "#000000",
-            "title_color": "#ffffff",
-            "subtitle_color": "#f2f2f2",
-            "title_size": 32,
-            "subtitle_size": 16,
-            "title_spacing": 10,
-            "image_border_radius": 8,
-            "hotspot_size": 40,
-            "hotspot_color": "#fab320",
-            "hotspot_border_color": "#ffffff",
-            "hotspot_icon_color": "#000000",
-            "product_grid_gap": 20,
-            "product_card_bg": "#ffffff",
-            "product_card_border": "#e5e5e5",
-            "product_card_radius": 8,
-            "product_card_padding": 20,
-            "product_image_radius": 6,
-            "product_title_color": "#000000",
-            "product_price_color": "#666666",
-            "product_title_size": 16,
-            "product_price_size": 14,
-            "product_button_bg": "#fab320",
-            "product_button_text_color": "#000000",
-            "product_button_hover_bg": "#000000",
-            "product_button_hover_text": "#ffffff",
-            "product_button_radius": 6,
-            "hotspot_1_enabled": true,
-            "hotspot_1_x": 30,
-            "hotspot_1_y": 40,
-            "hotspot_1_product": "agape-helios-silver",
-            "hotspot_2_enabled": true,
-            "hotspot_2_x": 53,
-            "hotspot_2_y": 60,
-            "hotspot_2_product": "",
-            "hotspot_3_enabled": false,
-            "hotspot_3_x": 50,
-            "hotspot_3_y": 30,
-            "hotspot_3_product": "vong-tay-bac-s925-angel-silver-helios-silver-original",
-            "hotspot_4_enabled": false,
-            "hotspot_4_x": 20,
-            "hotspot_4_y": 70,
-            "hotspot_4_product": "",
-            "hotspot_5_enabled": false,
-            "hotspot_5_x": 80,
-            "hotspot_5_y": 20,
-            "hotspot_5_product": ""
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_3cdc18e_PaFjV9"
-      ],
-      "disabled": true,
-      "settings": {}
-    },
     "two_banner_wRJUew": {
       "type": "two-banner",
       "blocks": {
@@ -122,6 +51,7 @@
         "banner_YYG7rL",
         "banner_MaTkbP"
       ],
+      "disabled": true,
       "name": "Two Banners",
       "settings": {
         "overlap_header": true,
@@ -244,28 +174,6 @@
         "slide_navigation": "dots",
         "autoplay": true,
         "autoplay_speed": 7
-      }
-    },
-    "featured_collection_UAPxei": {
-      "type": "featured-collection",
-      "disabled": true,
-      "settings": {
-        "title": "BÁN CHẠY NHẤT",
-        "featured_collection_align": "center",
-        "collection": "best-sellers",
-        "layout": "carousel",
-        "featured_addtocart_hide": false,
-        "show_add_to_cart": true,
-        "show_title": true,
-        "show_price": true,
-        "show_review": true,
-        "show_vendor": false,
-        "grid": 4,
-        "rows": 2,
-        "grid_mobile": "2",
-        "hide_swatches": false,
-        "alternate_bg_color": false,
-        "show_view_all": false
       }
     },
     "grid_image_YiMfwg": {
@@ -432,93 +340,16 @@
         "full_width": true,
         "overlay_style_tint": true
       }
-    },
-    "product_with_banner_tAQWh6": {
-      "type": "product-with-banner",
-      "disabled": true,
-      "name": "Banner với sản phẩm",
-      "settings": {
-        "section_title": "",
-        "section_spacing": 50,
-        "alternate_bg": false,
-        "banner_position": "left",
-        "banner_image": "shopify://shop_images/SRK03001.jpg",
-        "banner_width": 50,
-        "image_border_radius": 10,
-        "show_banner_text": false,
-        "banner_title": "",
-        "heading_size": 32,
-        "banner_description": "",
-        "banner_button_label": "Khám phá ngay",
-        "banner_button_link": "",
-        "text_vertical_position": "center",
-        "text_horizontal_position": "center",
-        "text_alignment": "center",
-        "overlay_color": "#0000004d",
-        "overlay_opacity": 50,
-        "text_color": "#ffffff",
-        "button_bg": "#ffffff",
-        "button_text": "#000000",
-        "products_title": "",
-        "collection": "all-products-2",
-        "products_layout": "carousel",
-        "products_count": 4,
-        "products_per_row": 1,
-        "products_per_row_mobile": "2",
-        "show_vendor": false,
-        "hide_swatches": false,
-        "show_view_all": false
-      }
-    },
-    "shop_the_look_banner_YfdBV3": {
-      "type": "shop-the-look-banner",
-      "blocks": {
-        "product_EmYDKw": {
-          "type": "product",
-          "settings": {
-            "product": "agape-helios-silver"
-          }
-        },
-        "product_Pq38zj": {
-          "type": "product",
-          "settings": {
-            "product": "vong-tay-bac-s925-angel-heaven-helios-silver-original"
-          }
-        }
-      },
-      "block_order": [
-        "product_EmYDKw",
-        "product_Pq38zj"
-      ],
-      "disabled": true,
-      "name": "Shop the look banner",
-      "settings": {
-        "title": "Shop the look",
-        "subtitle": "",
-        "banner_image": "shopify://shop_images/SRK03001.jpg",
-        "banner_heading": "",
-        "banner_text": "",
-        "button_label": "",
-        "button_link": "",
-        "banner_width": 50,
-        "show_secondary_image": true,
-        "padding_top": "40",
-        "padding_bottom": "40"
-      }
     }
   },
   "order": [
-    "1759482370229a0e64",
     "two_banner_wRJUew",
     "background_video_responsive_eqdpnM",
     "slideshow_3KJMhV",
-    "featured_collection_UAPxei",
     "grid_image_YiMfwg",
     "featured_collection_MemUg9",
     "slideshow_GMkqm7",
     "grid_image_4DRrMz",
-    "background_video_NCMV83",
-    "product_with_banner_tAQWh6",
-    "shop_the_look_banner_YfdBV3"
+    "background_video_NCMV83"
   ]
 }
