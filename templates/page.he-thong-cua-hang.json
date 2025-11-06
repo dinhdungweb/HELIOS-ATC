@@ -64,10 +64,10 @@
       "name": "Media with text",
       "settings": {
         "subheading": "",
-        "title": "HELIOS tin rằng kết nối thật sự chỉ bắt đầu khi bạn trực tiếp cầm nắm và cảm nhận chế tác bằng chính đôi tay và cảm xúc của mình",
+        "title": "",
         "title_size": 22,
         "title_width": 40,
-        "text": "",
+        "text": "<p>HELIOS tin rằng kết nối thật sự chỉ bắt đầu khi bạn trực tiếp cầm nắm và cảm nhận chế tác bằng chính đôi tay và cảm xúc của mình.<br/><br/>Lúc đó, bạn sẽ nhận ra sự khác biệt mà mỗi chế tác mang lại, tinh thần thủ công trên từng chi tiết, và cảm giác riêng biệt khi sở hữu nó.</p>",
         "button_label": "",
         "button_link": "",
         "text_alignment": "center",
