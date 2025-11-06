@@ -41,7 +41,7 @@
       "name": "Rich text",
       "settings": {
         "subheading": "",
-        "title": "Hệ Thống Cửa Hàng",
+        "title": "Tại sao bạn nên đến cửa hàng của HELIOS?",
         "title_size": 48,
         "title_width": 12,
         "heading_h1": false,
@@ -54,6 +54,29 @@
         "enlarge_text": true,
         "full_width": false,
         "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "image_with_text_yY6qNG": {
+      "type": "image-with-text",
+      "name": "Media with text",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>HELIOS tin rằng kết nối thật sự chỉ bắt đầu khi bạn trực tiếp cầm nắm và cảm nhận chế tác bằng chính đôi tay của mình<br/><br/></p>",
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "center",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/store_NGT_16_1.jpg",
+        "image_width": 100,
+        "image_position": "right",
+        "media_size": "contain",
         "color_scheme": "standard",
         "color_bg": "",
         "color_text": ""
@@ -620,6 +643,7 @@
     "main",
     "background_video_responsive_LgwVz4",
     "rich_text_iNEMAi",
+    "image_with_text_yY6qNG",
     "rich_text_KBHHh9",
     "rich_text_ECre7U",
     "grid_image_QWbchx",
