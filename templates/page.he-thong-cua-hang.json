@@ -16,6 +16,9 @@
     },
     "background_video_responsive_LgwVz4": {
       "type": "background-video-responsive",
+      "custom_css": [
+        ".video-responsive-container {height: 450px;}"
+      ],
       "name": "Video responsive",
       "settings": {
         "video_shopify_desktop": "shopify://files/videos/VID CHO LANDING PAGE 19x5-2.mp4",
