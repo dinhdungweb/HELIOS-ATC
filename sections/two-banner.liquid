@@ -2,6 +2,7 @@
   assign section_classes = 'two-banner two-banner--' | append: section.id
 -%}
 
+<div id="section-id-{{ section.id }}" class="{% if section.settings.overlap_header %}header-overlap-section needs-alt-logo{% endif %}">
 <section class="{{ section_classes }}" data-section-id="{{ section.id }}">
   <style>
     .two-banner--{{ section.id }} .two-banner__grid {display:grid; grid-template-columns:1fr; gap: {{ section.settings.gap | default: 16 }}px;}
@@ -62,11 +63,19 @@
     {%- endfor -%}
   </div>
 </section>
+</div>
 
 {% schema %}
 {
   "name": "Two Banners",
+  "class": "section-two-banners",
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "overlap_header",
+      "label": "Chồng lên header trong suốt (giống Slideshow)",
+      "default": false
+    },
     {
       "type": "range",
       "id": "gap",
