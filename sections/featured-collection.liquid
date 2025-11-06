@@ -56,7 +56,7 @@
           {% for product in collection.products limit: 12 %}
             <div class="swiper-slide">
               {% assign animate_delay = forloop.index | times: 0.4 %}
-              {% render 'product-block', product: product, product_class: product_class, i: forloop.index, animate: animate_delay, show_vendor: section.settings.show_vendor, hide_swatches: section.settings.hide_swatches %}
+              {% render 'product-block', product: product, product_class: product_class, i: forloop.index, animate: animate_delay, show_vendor: section.settings.show_vendor, hide_swatches: section.settings.hide_swatches, show_title: section.settings.show_title, show_price: section.settings.show_price, show_review: section.settings.show_review, show_add_to_cart: section.settings.show_add_to_cart %}
             </div>
           {% endfor %}
 
@@ -85,7 +85,7 @@
       {% if section.settings.collection != blank %}
         {% assign collection = collections[section.settings.collection] %}
         {% for product in collection.products limit: max_products %}
-          {% render 'product-block', product: product, product_class: product_class, animation_type: animation_type, i: forloop.index, show_vendor: section.settings.show_vendor, animate: forloop.index, hide_swatches: section.settings.hide_swatches %}
+          {% render 'product-block', product: product, product_class: product_class, animation_type: animation_type, i: forloop.index, show_vendor: section.settings.show_vendor, animate: forloop.index, hide_swatches: section.settings.hide_swatches, show_title: section.settings.show_title, show_price: section.settings.show_price, show_review: section.settings.show_review, show_add_to_cart: section.settings.show_add_to_cart %}
         {% endfor %}
 
       {% else %}
@@ -160,6 +160,30 @@
         "label": "Hide Add to cart",
         "info": "Add to cart will be disabled on touch devices.",
         "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "show_add_to_cart",
+        "label": "Show Add to cart",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_title",
+        "label": "Show product title",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_price",
+        "label": "Show product price",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_review",
+        "label": "Show product review",
+        "default": true
       },
       {
         "type": "checkbox",
