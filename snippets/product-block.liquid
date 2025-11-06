@@ -115,10 +115,10 @@
     assign param_symbol = "&"
   endif
  -%}
- {% if show_title == blank %}{% assign show_title = true %}{% endif %}
- {% if show_price == blank %}{% assign show_price = true %}{% endif %}
- {% if show_review == blank %}{% assign show_review = true %}{% endif %}
- {% if show_add_to_cart == blank %}{% assign show_add_to_cart = true %}{% endif %}
+{% if show_title == nil %}{% assign show_title = true %}{% endif %}
+{% if show_price == nil %}{% assign show_price = true %}{% endif %}
+{% if show_review == nil %}{% assign show_review = true %}{% endif %}
+{% if show_add_to_cart == nil %}{% assign show_add_to_cart = true %}{% endif %}
 
 <div class="product-block
   cc-product-block
