@@ -7,17 +7,19 @@
 
 <div id="section-id-{{ section.id }}" class="{% if section.settings.full_width == false %}section-spacing wide-container{% else %}header-overlap-section needs-alt-logo{% endif %}" data-section-type="background-video-responsive">
   {% style %}
-    #section-id-{{ section.id }} .video-responsive-container {
-      height: {{ section.settings.video_height_mobile }}px;
-    }
+    {% if section.settings.video_full_vh %}
+    #section-id-{{ section.id }} .video-responsive-container { height: 100vh; }
+    {% else %}
+    #section-id-{{ section.id }} .video-responsive-container { height: {{ section.settings.video_height_mobile }}px; }
+    {% endif %}
     #section-id-{{ section.id }} .line-1 {
       max-width: {{ section.settings.title_width }}em;
     }
 
     @media (min-width: 768px) {
-      #section-id-{{ section.id }} .video-responsive-container {
-        height: {{ section.settings.video_height_desktop }}px;
-      }
+      {% unless section.settings.video_full_vh %}
+      #section-id-{{ section.id }} .video-responsive-container { height: {{ section.settings.video_height_desktop }}px; }
+      {% endunless %}
 
       #section-id-{{ section.id }} .line-1 {
         font-size: {{ section.settings.title_size | times: 0.7 }}px;
@@ -211,6 +213,12 @@
 {
   "name": "Video responsive",
   "settings": [
+    {
+      "id": "video_full_vh",
+      "type": "checkbox",
+      "label": "Chiều cao 100vh toàn màn hình",
+      "default": false
+    },
     {
       "id": "video_height_desktop",
       "type": "range",
