@@ -8,7 +8,7 @@
 <div id="section-id-{{ section.id }}" class="{% if section.settings.full_width == false %}section-spacing wide-container{% else %}header-overlap-section needs-alt-logo{% endif %}" data-section-type="background-video-responsive">
   {% style %}
     {% if section.settings.video_full_vh %}
-    #section-id-{{ section.id }} .video-responsive-container { height: 100vh; }
+    #section-id-{{ section.id }} .video-responsive-container { height: var(--viewport-height); }
     {% else %}
     #section-id-{{ section.id }} .video-responsive-container { height: {{ section.settings.video_height_mobile }}px; }
     {% endif %}
