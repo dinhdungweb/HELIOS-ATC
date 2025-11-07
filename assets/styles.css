@@ -9865,6 +9865,8 @@ html.touch .product-block.product-block--quickbuy .cc-quick-buy-btn, html.touch 
 @media (min-width: 992px) {
   .product-area .product-area__media {
     width: calc(100% - 500px);
+    /* Offset main media to the right so sticky thumbs (left:30px; width:99px) don't overlap */
+    margin-left: 150px;
   }
   .product-area .product-area__media .theme-gallery[data-column-count="2"] {
     margin: 0 -10px;
@@ -9915,6 +9917,7 @@ html.touch .product-block.product-block--quickbuy .cc-quick-buy-btn, html.touch 
 @media (min-width: 1441px) {
   .product-area .product-area__media {
     width: calc(100% - 600px);
+    margin-left: 180px;
   }
 }
 @media (min-width: 992px) {

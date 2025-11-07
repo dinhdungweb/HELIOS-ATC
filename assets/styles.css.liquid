@@ -10234,6 +10234,7 @@ html.touch .product-block.product-block--quickbuy .cc-quick-buy-btn, html.touch 
 @media (min-width: 992px) {
   .product-area .product-area__media {
     width: calc(100% - 500px);
+    margin-left: {{ wide_content_gutters_md | default: 150 }}px;
   }
   .product-area .product-area__media .theme-gallery[data-column-count="2"] {
     margin: 0 -{{ wide_content_gutters | divided_by: 2 }}px;
@@ -10284,6 +10285,7 @@ html.touch .product-block.product-block--quickbuy .cc-quick-buy-btn, html.touch 
 @media (min-width: 1441px) {
   .product-area .product-area__media {
     width: calc(100% - 600px);
+    margin-left: {{ wide_content_gutters_lg | default: 180 }}px;
   }
 }
 @media (min-width: 992px) {
