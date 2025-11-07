@@ -21,13 +21,15 @@
       ],
       "name": "Video responsive",
       "settings": {
+        "video_full_vh": false,
+        "video_height_desktop": 700,
+        "video_height_mobile": 450,
+        "video_link": "",
+        "video_link_new_tab": false,
         "video_shopify_desktop": "shopify://files/videos/VID CHO LANDING PAGE 19x5-2.mp4",
         "video_external_desktop": "",
         "video_shopify_mobile": "shopify://files/videos/VID CHO LANDING PAGE 1x1-2.mp4",
         "video_external_mobile": "",
-        "video_full_width": true,
-        "video_original_size": false,
-        "video_full_screen": false,
         "subtitle": "",
         "title": "",
         "title_image_width_desktop": 800,
@@ -178,6 +180,7 @@
         "grid_image_full_width": true,
         "grid_image_with": 1400,
         "item_for_row": 4,
+        "item_ratio": "3/4",
         "item_per_row_mobile": "2"
       }
     },
@@ -280,6 +283,7 @@
         "grid_image_full_width": true,
         "grid_image_with": 1400,
         "item_for_row": 4,
+        "item_ratio": "3/4",
         "item_per_row_mobile": "2"
       }
     },
@@ -382,6 +386,7 @@
         "grid_image_full_width": true,
         "grid_image_with": 1400,
         "item_for_row": 4,
+        "item_ratio": "3/4",
         "item_per_row_mobile": "2"
       }
     },
@@ -507,6 +512,7 @@
         "grid_image_full_width": true,
         "grid_image_with": 1400,
         "item_for_row": 4,
+        "item_ratio": "3/4",
         "item_per_row_mobile": "2"
       }
     },
@@ -609,6 +615,7 @@
         "grid_image_full_width": true,
         "grid_image_with": 1400,
         "item_for_row": 4,
+        "item_ratio": "3/4",
         "item_per_row_mobile": "2"
       }
     },
