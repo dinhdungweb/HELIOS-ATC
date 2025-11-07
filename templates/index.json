@@ -19,7 +19,7 @@
         "video_external_mobile": "",
         "video_full_width": false,
         "video_original_size": false,
-        "video_full_screen": true,
+        "video_full_screen": false,
         "subtitle": "",
         "title": "",
         "title_image_width_desktop": 800,
