@@ -9919,12 +9919,13 @@ html.touch .product-block.product-block--quickbuy .cc-quick-buy-btn, html.touch 
 }
 @media (min-width: 992px) {
   .product-area .product-area__media.multi-column {
-    padding-left: 70px;
+    /* Ensure enough space for sticky thumbs (width: 99px; left: 30px) */
+    padding-left: 150px;
   }
 }
 @media (min-width: 1441px) {
   .product-area .product-area__media.multi-column {
-    padding-left: 90px;
+    padding-left: 180px;
   }
 }
 .product-area .product-area__thumbs {
