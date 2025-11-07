@@ -1260,4 +1260,54 @@
       }
     ]
   }
+ ,
+  {
+    "name": "Analytics & Tracking",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Google Tag Manager"
+      },
+      {
+        "type": "text",
+        "id": "gtm_id",
+        "label": "GTM Container ID",
+        "default": "GTM-54WD6KR"
+      },
+      {
+        "type": "checkbox",
+        "id": "use_gtm_only",
+        "label": "Chỉ dùng GTM, vô hiệu hoá pixel trực tiếp",
+        "default": true
+      },
+      {
+        "type": "header",
+        "content": "Tùy chọn pixel trực tiếp (nếu cần)"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_ga_direct",
+        "label": "Bật Google Analytics trực tiếp",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_google_ads_direct",
+        "label": "Bật Google Ads Remarketing trực tiếp",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_fb_direct",
+        "label": "Bật Meta Pixel (Facebook) trực tiếp",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_tiktok_direct",
+        "label": "Bật TikTok Pixel trực tiếp",
+        "default": false
+      }
+    ]
+  }
 ]
