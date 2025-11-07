@@ -9,7 +9,7 @@
             <div class="right-image">
               <a href="{{ block.settings.link | default: '#' }}">
                 <div class="image-overlay">
-                  <img src="{{ block.settings.image | img_url: 'original' }}" alt="" loading="lazy">
+                  {% render 'responsive-image', image: block.settings.image %}
                   {% if block.settings.text != blank %}
                     <div class="custom-heading">{{ block.settings.text }}</div>
                   {% endif %}
