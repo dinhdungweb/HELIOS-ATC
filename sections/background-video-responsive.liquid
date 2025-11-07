@@ -48,6 +48,10 @@
     -%}
 
     {% if cover_image %}
+      <link rel="preload" as="image" href="{{ cover_image | img_url: '1600x' }}" fetchpriority="high">
+    {% endif %}
+
+    {% if cover_image %}
       <div class="video-responsive-container__fallback lazyload fade-in"
         data-bgset="{% render 'bgset', image: cover_image %}"
         data-sizes="auto"
