@@ -7,21 +7,17 @@
 
 <div id="section-id-{{ section.id }}" class="{% if section.settings.full_width == false %}section-spacing wide-container{% else %}header-overlap-section needs-alt-logo{% endif %}" data-section-type="background-video-responsive">
   {% style %}
-    {%- if section.settings.height == 'fixed' -%}
     #section-id-{{ section.id }} .video-responsive-container {
-      height: {{ section.settings.height_mobile }}px;
+      height: {{ section.settings.video_height_mobile }}px;
     }
-    {%- endif -%}
     #section-id-{{ section.id }} .line-1 {
       max-width: {{ section.settings.title_width }}em;
     }
 
     @media (min-width: 768px) {
-      {%- if section.settings.height == 'fixed' -%}
       #section-id-{{ section.id }} .video-responsive-container {
-        height: {{ section.settings.height_desktop }}px;
+        height: {{ section.settings.video_height_desktop }}px;
       }
-      {%- endif -%}
 
       #section-id-{{ section.id }} .line-1 {
         font-size: {{ section.settings.title_size | times: 0.7 }}px;
@@ -36,10 +32,7 @@
   {% endstyle %}
 
   <div class="video-responsive-container video-responsive-container--background image-overlay
-    {% if section.settings.overlay_style_tint %} image-overlay--bg-full{% endif %}
-    {% if section.settings.video_full_width %} video--full-width{% endif %}
-    {% if section.settings.video_original_size %} video--original-size{% endif %}
-    {% if section.settings.video_full_screen %} video--full-screen{% endif %}">
+    {% if section.settings.overlay_style_tint %} image-overlay--bg-full{% endif %}">
 
     {% if section.settings.video_link != blank %}
       <a class="video-link-overlay" href="{{ section.settings.video_link }}" {% if section.settings.video_link_new_tab %}target="_blank" rel="noopener"{% endif %} aria-label="{{ section.settings.title | default: section.settings.subtitle | default: 'Video link' | escape }}"></a>
@@ -116,7 +109,6 @@
   .video-responsive-container {
     position: relative;
     width: 100%;
-    height: 100vh;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -137,33 +129,7 @@
     display: none;
   }
 
-  .video--full-width video {
-    width: 100%;
-    height: auto;
-  }
-
-  .video--original-size video {
-    object-fit: contain !important;
-    width: auto;
-    height: auto;
-    max-width: 100%;
-    max-height: 100%;
-  }
-
-  .video--full-screen {
-    position: fixed !important;
-    top: 0;
-    left: 0;
-    width: 100vw !important;
-    height: 100vh !important;
-    z-index: 9999;
-  }
-
-  .video--full-screen video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+  /* Removed full-width/original-size/full-screen variants to simplify */
 
   .video-overlay-content {
     position: absolute;
@@ -246,6 +212,26 @@
   "name": "Video responsive",
   "settings": [
     {
+      "id": "video_height_desktop",
+      "type": "range",
+      "label": "Chiều cao video (Desktop)",
+      "min": 200,
+      "max": 1200,
+      "step": 10,
+      "default": 700,
+      "unit": "px"
+    },
+    {
+      "id": "video_height_mobile",
+      "type": "range",
+      "label": "Chiều cao video (Mobile)",
+      "min": 150,
+      "max": 1000,
+      "step": 10,
+      "default": 450,
+      "unit": "px"
+    },
+    {
       "id": "video_link",
       "type": "url",
       "label": "Video click link"
@@ -285,24 +271,6 @@
       "type": "image_picker",
       "label": "Fallback Image",
       "info": "Sử dụng khi video không load được"
-    },
-    {
-      "type": "checkbox",
-      "id": "video_full_width",
-      "label": "Hiển thị toàn chiều ngang (Full width)",
-      "default": true
-    },
-    {
-      "type": "checkbox",
-      "id": "video_original_size",
-      "label": "Hiển thị theo kích thước gốc (Original size)",
-      "default": false
-    },
-    {
-      "type": "checkbox",
-      "id": "video_full_screen",
-      "label": "Toàn màn hình (Full screen)",
-      "default": false
     },
     {
       "id": "subtitle",
