@@ -6,7 +6,23 @@
       <div class="main-image-wrapper">
         <div class="main-image">
           {% if section.settings.main_image %}
-            {% render 'responsive-image', image: section.settings.main_image %}
+            {%- liquid
+              assign main_ratio_val = blank
+              if section.settings.image_aspect_ratio == '1/1'
+                assign main_ratio_val = 1
+              elsif section.settings.image_aspect_ratio == '3/4'
+                assign main_ratio_val = 0.75
+              elsif section.settings.image_aspect_ratio == '4/3'
+                assign main_ratio_val = 1.333
+              elsif section.settings.image_aspect_ratio == '16/9'
+                assign main_ratio_val = 1.777
+              endif
+            -%}
+            {% if main_ratio_val %}
+              {% render 'responsive-image', image: section.settings.main_image, aspect_ratio: main_ratio_val %}
+            {% else %}
+              {% render 'responsive-image', image: section.settings.main_image %}
+            {% endif %}
           {% endif %}
         </div>
         
