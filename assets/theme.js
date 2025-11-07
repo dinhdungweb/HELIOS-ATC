@@ -7867,7 +7867,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     /// Register all sections
-    const deferredLoadViewportExcess = 1200;
+    const deferredLoadViewportExcess = 300;
     theme.Sections.init();
     theme.Sections.register('header', theme.HeaderSection, { deferredLoad: false });
     theme.Sections.register('footer', theme.FooterSection, { deferredLoadViewportExcess });

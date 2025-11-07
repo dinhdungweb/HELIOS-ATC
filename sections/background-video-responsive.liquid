@@ -60,25 +60,25 @@
       </div>
     {% endif %}
 
-    <video class="background-video-responsive desktop-video" autoplay muted loop playsinline>
+    <video class="background-video-responsive desktop-video" autoplay muted loop playsinline preload="metadata"{% if cover_image %} poster="{{ cover_image | img_url: '1600x' }}"{% endif %}>
       {% if section.settings.video_shopify_desktop %}
         {% for source in section.settings.video_shopify_desktop.sources %}
           <source src="{{ source.url }}" type="{{ source.mime_type }}">
         {% endfor %}
       {% elsif section.settings.video_external_desktop contains 'youtube.com' or section.settings.video_external_desktop contains 'vimeo.com' %}
         <iframe src="{{ section.settings.video_external_desktop | replace: 'watch?v=', 'embed/' }}?autoplay=1&loop=1&mute=1&controls=0&showinfo=0"
-          frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+          frameborder="0" loading="lazy" allow="autoplay; fullscreen" allowfullscreen title="Background video"></iframe>
       {% endif %}
     </video>
 
-    <video class="background-video-responsive mobile-video" autoplay muted loop playsinline>
+    <video class="background-video-responsive mobile-video" autoplay muted loop playsinline preload="metadata"{% if cover_image %} poster="{{ cover_image | img_url: '1200x' }}"{% endif %}>
       {% if section.settings.video_shopify_mobile %}
         {% for source in section.settings.video_shopify_mobile.sources %}
           <source src="{{ source.url }}" type="{{ source.mime_type }}">
         {% endfor %}
       {% elsif section.settings.video_external_mobile contains 'youtube.com' or section.settings.video_external_mobile contains 'vimeo.com' %}
         <iframe src="{{ section.settings.video_external_mobile | replace: 'watch?v=', 'embed/' }}?autoplay=1&loop=1&mute=1&controls=0&showinfo=0"
-          frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+          frameborder="0" loading="lazy" allow="autoplay; fullscreen" allowfullscreen title="Background video"></iframe>
       {% endif %}
     </video>
 
