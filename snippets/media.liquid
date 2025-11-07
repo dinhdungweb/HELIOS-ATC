@@ -12,7 +12,8 @@
         {% assign img_url = media.preview_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
         <img class="rimage__image lazyload--manual {% unless prevent_lazyload %}fade-in{% endunless %}"
              {% if prevent_lazyload %}
-               src="{{ media.preview_image | img_url: '360x' }}"
+               src="{{ media.preview_image | img_url: '1080x' }}"
+               fetchpriority="high" decoding="async"
              {% endif %}
              data-src="{{ img_url }}"
              data-widths="[460, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
@@ -86,7 +87,8 @@
       <div class="product-media--video-mask product-media--video-mask-right"></div>
       <div class="product-media--video-mask product-media--video-mask-top"></div>
       <div class="product-media--video-mask product-media--video-mask-bottom"></div>
-      {{ media | external_video_tag }}
+      {%- capture external_tag -%}{{ media | external_video_tag }}{%- endcapture -%}
+      {{ external_tag | replace: '<iframe', '<iframe loading="lazy"' }}
     </div>
 
   {% when 'model' %}
