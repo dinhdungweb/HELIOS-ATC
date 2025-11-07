@@ -13,6 +13,8 @@
       "type": "background-video-responsive",
       "name": "Video responsive",
       "settings": {
+        "video_link": "shopify://collections/all-products",
+        "video_link_new_tab": false,
         "video_shopify_desktop": "shopify://files/videos/banner web Đức tin 19x9 (1).mp4",
         "video_external_desktop": "",
         "video_shopify_mobile": "shopify://files/videos/banner web Đức tin 2x3 (3) (online-video-cutter.com).mp4",
