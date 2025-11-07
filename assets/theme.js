@@ -1883,7 +1883,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         let src = 'https://www.youtube.com/embed/' + videoId + '?' + ytURLSearchParams.toString();
 
-        let $videoElement = $('<iframe class="video-container__video-element" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">').attr({
+        let $videoElement = $('<iframe class="video-container__video-element" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy">').attr({
           id: containerId,
           width: 640,
           height: 360,
@@ -1996,7 +1996,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         let src = 'https://player.vimeo.com/video/' + videoId + '?' + viURLSearchParams.toString();
 
-        let $videoElement = $('<iframe class="video-container__video-element" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">').attr({
+        let $videoElement = $('<iframe class="video-container__video-element" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy">').attr({
           id: containerId,
           width: 640,
           height: 360,
@@ -2087,7 +2087,7 @@ document.addEventListener("DOMContentLoaded", () => {
         var autoplay = $(this).data('video-autoplay');
         let isBackgroundVideo = $(this).hasClass('video-container--background');
 
-        var $video = $('<video playsinline>');
+        var $video = $('<video playsinline preload="metadata">');
         if ($(this).data('video-loop')) {
           $video.attr('loop', 'loop');
         }

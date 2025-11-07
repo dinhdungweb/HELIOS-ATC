@@ -149,18 +149,21 @@
 
       <a data-cc-animate-click class="image-inner" href="{{ product_url }}" aria-label="{{ product.title | escape }}" tabindex="-1">
         <div class="image__first">
-          {% if external_video_url != blank %}
-            {% render 'inline-video', video_external: external_video_url, image: primary_image %}
-          {% elsif mp4_url != blank %}
-            {% render 'inline-video', video: mp4_url, image: primary_image %}
-          {% elsif product.featured_media != blank and product.featured_media.media_type == "video" %}
-            {% render 'inline-video', video_shopify: product.featured_media, image: primary_image %}
-          {% elsif custom_card_image_file_field != blank %}
+          {% if settings.prod_show_videos %}
+            {% if external_video_url != blank %}
+              {% render 'inline-video', video_external: external_video_url, image: primary_image, autoplay: false, loop: false %}
+            {% elsif mp4_url != blank %}
+              {% render 'inline-video', video: mp4_url, image: primary_image, autoplay: false, loop: false %}
+            {% elsif product.featured_media != blank and product.featured_media.media_type == "video" %}
+              {% render 'inline-video', video_shopify: product.featured_media, image: primary_image, autoplay: false, loop: false %}
+            {% endif %}
+          {% endif %}
+          {% if custom_card_image_file_field != blank and (not settings.prod_show_videos or (settings.prod_show_videos and external_video_url == blank and mp4_url == blank and product.featured_media.media_type != 'video')) %}
             <img class="rimage__image" src="{{ custom_card_image_file_field | file_url }}" alt="{{ product.title | escape }}" loading="lazy">
-          {% elsif custom_card_image_url_field != blank %}
+          {% elsif custom_card_image_url_field != blank and (not settings.prod_show_videos or (settings.prod_show_videos and external_video_url == blank and mp4_url == blank and product.featured_media.media_type != 'video')) %}
             {% assign custom_card_image_url = custom_card_image_url_field.value | default: custom_card_image_url_field | strip %}
             <img class="rimage__image" src="{{ custom_card_image_url }}" alt="{{ product.title | escape }}" loading="lazy">
-          {% else %}
+          {% elsif not settings.prod_show_videos or (settings.prod_show_videos and external_video_url == blank and mp4_url == blank and product.featured_media.media_type != 'video') %}
             {% render 'responsive-image', image: primary_image, min_aspect_ratio: 0.6 %}
           {% endif %}
 
