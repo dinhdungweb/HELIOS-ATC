@@ -5740,8 +5740,38 @@ document.addEventListener("DOMContentLoaded", () => {
   theme.inlineVideos = {
     init: (target) => {
       $('.section-background-video--inline', target).each(function () {
-        theme.VideoManager.onSectionLoad($(this)[0]);
-        $(this).addClass('cc-init');
+        const el = $(this)[0];
+        if (el.__ivObserver) return;
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              // Bật autoplay khi vào viewport trước khi khởi tạo
+              const vc = el.querySelector('.video-container');
+              if (vc) {
+                vc.setAttribute('data-video-autoplay', 'true');
+              }
+              if (!el.classList.contains('cc-init')) {
+                theme.VideoManager.onSectionLoad(el);
+                el.classList.add('cc-init');
+              }
+              // Nếu đã khởi tạo rồi và là mp4, tiếp tục phát
+              const videoEl = el.querySelector('video');
+              if (videoEl && videoEl.paused) {
+                videoEl.play().catch(() => {});
+              }
+            } else {
+              // Rời viewport: tạm dừng video mp4 (tiết kiệm CPU)
+              const videoEl = el.querySelector('video');
+              if (videoEl && !videoEl.paused) {
+                videoEl.pause();
+              }
+            }
+          });
+        }, { rootMargin: '100px', threshold: 0.25 });
+
+        observer.observe(el);
+        el.__ivObserver = observer;
       });
     },
     destroy: (target) => {
