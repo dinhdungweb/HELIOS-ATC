@@ -6,9 +6,7 @@
       <div class="main-image-wrapper">
         <div class="main-image">
           {% if section.settings.main_image %}
-            <img src="{{ section.settings.main_image | img_url: '800x' }}" 
-                 alt="{{ section.settings.main_image.alt | default: 'Serie Ghost' }}"
-                 loading="lazy">
+            {% render 'responsive-image', image: section.settings.main_image %}
           {% endif %}
         </div>
         
@@ -41,9 +39,7 @@
       {% for block in section.blocks %}
         {% if block.type == 'gallery_image' and block.settings.image %}
           <div class="gallery-item">
-            <img src="{{ block.settings.image | img_url: '400x' }}" 
-                 alt="{{ block.settings.image.alt | default: 'Gallery image' }}"
-                 loading="lazy">
+            {% render 'responsive-image', image: block.settings.image %}
           </div>
         {% endif %}
       {% endfor %}
@@ -75,10 +71,8 @@
   position: relative;
 }
 
-.main-image img {
+.main-image .rimage-outer-wrapper {
   width: 100%;
-  aspect-ratio: {{ section.settings.image_aspect_ratio | default: '3/4' }};
-  object-fit: cover;
   display: block;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
