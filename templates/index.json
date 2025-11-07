@@ -30,105 +30,6 @@
         "button_link": "shopify://collections/halloween"
       }
     },
-    "slideshow_3KJMhV": {
-      "type": "slideshow",
-      "blocks": {
-        "image_haUx6f": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/banner_19_9_1.jpg",
-            "mobile_image": "shopify://shop_images/banner_1000_1500.jpg",
-            "slide_link": "shopify://collections/trung-thu-2025",
-            "subheading": "",
-            "title": "",
-            "title_size": 60,
-            "title_width": 12,
-            "heading_h1": false,
-            "text": "",
-            "enlarge_text": true,
-            "button_label": "",
-            "overlay_position": "position--hcenter position--vcenter",
-            "overlay_position_mobile": "position--hcenter-xs position--vcenter-xs"
-          }
-        },
-        "image_pVjqmz": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/28.7_banner_web_t_ng_3-01.jpg",
-            "mobile_image": "shopify://shop_images/28.7_banner_web_t_ng_3-03.jpg",
-            "slide_link": "shopify://collections/helios-prime-collection",
-            "subheading": "",
-            "title": "",
-            "title_size": 60,
-            "title_width": 12,
-            "heading_h1": false,
-            "text": "",
-            "enlarge_text": true,
-            "button_label": "",
-            "overlay_position": "position--hcenter position--vcenter",
-            "overlay_position_mobile": "position--hcenter-xs position--vcenter-xs"
-          }
-        },
-        "image_mbQkeQ": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/7.7_design_banner_Nam_Anh_2.0-01.jpg",
-            "mobile_image": "shopify://shop_images/7.7_design_banner_Nam_Anh_2.0-03.jpg",
-            "slide_link": "shopify://collections/my-own-beat-rings",
-            "subheading": "",
-            "title": "",
-            "title_size": 60,
-            "title_width": 12,
-            "heading_h1": false,
-            "text": "",
-            "enlarge_text": true,
-            "button_label": "",
-            "overlay_position": "position--hcenter position--vcenter",
-            "overlay_position_mobile": "position--hcenter-xs position--vcenter-xs"
-          }
-        },
-        "image_HHzFgj": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/18.7_design_banner_d_da-01.jpg",
-            "mobile_image": "shopify://shop_images/18.7_design_banner_d_da-02.jpg",
-            "slide_link": "shopify://collections/leather-items",
-            "subheading": "",
-            "title": "",
-            "title_size": 60,
-            "title_width": 12,
-            "heading_h1": false,
-            "text": "",
-            "enlarge_text": true,
-            "button_label": "",
-            "overlay_position": "position--hcenter position--vcenter",
-            "overlay_position_mobile": "position--hcenter-xs position--vcenter-xs"
-          }
-        }
-      },
-      "block_order": [
-        "image_haUx6f",
-        "image_pVjqmz",
-        "image_mbQkeQ",
-        "image_HHzFgj"
-      ],
-      "disabled": true,
-      "settings": {
-        "height": "adapt",
-        "height_desktop": 600,
-        "height_mobile": 500,
-        "full_width": true,
-        "mobile_overlay_under": false,
-        "overlay_style_tint": true,
-        "slide_transition": "zoom",
-        "slide_navigation": "dots",
-        "autoplay": true,
-        "autoplay_speed": 7
-      }
-    },
     "grid_image_YiMfwg": {
       "type": "grid-image",
       "blocks": {
@@ -297,7 +198,6 @@
   },
   "order": [
     "background_video_responsive_eqdpnM",
-    "slideshow_3KJMhV",
     "grid_image_YiMfwg",
     "featured_collection_MemUg9",
     "slideshow_GMkqm7",
