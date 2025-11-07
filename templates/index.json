@@ -13,9 +13,9 @@
       "type": "background-video-responsive",
       "name": "Video responsive",
       "settings": {
-        "video_full_vh": true,
+        "video_full_vh": false,
         "video_height_desktop": 900,
-        "video_height_mobile": 450,
+        "video_height_mobile": 700,
         "video_link": "shopify://collections/all-products",
         "video_link_new_tab": false,
         "video_shopify_desktop": "shopify://files/videos/banner web Đức tin 19x9 (1).mp4",
